@@ -1,0 +1,14 @@
+﻿@{
+    View.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@* The login form will use POST and go to /User/Login. If returnUrl was set we leave it in the url. *@
+@using (Html.BeginForm("Login", "User", new { returnUrl = Request.QueryString["returnUrl"] }, FormMethod.Post))
+{
+    @Html.Partial("_OpenIdLoginForm")
+    <div>Remember me? @Html.CheckBox("remeberMe", true)</div>
+    <div><input id="openidlogin" type="submit" value="Login" /></div>
+}
