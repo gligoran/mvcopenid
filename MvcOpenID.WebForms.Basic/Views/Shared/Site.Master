@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title> 
+        <asp:Literal runat="server" Text="OpenID Starter Kit for ASP.NET MVC - " /><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="<%: Url.Content("~/Content/Site.css") %>" rel="stylesheet" type="text/css" />
+    <%--
+    <script src="<%: Url.Content("~/Scripts/jquery-1.4.1.min.js")" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    --%>
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>OpenID Starter Kit for ASP.NET MVC</h1>
+            </div>
+
+            <ul id="menu">
+                <li><%: Html.ActionLink("Home", "Index", "Home") %></li>
+                <li><%: Html.ActionLink("EFCTP4", "EFCTP4", "Home") %></li>
+                <li><%: Html.ActionLink("User", "Index", "User") %></li>
+                <li>
+                    <% if (Request.IsAuthenticated)
+                    { %>
+                        <%: Html.ActionLink("Logout", "Logout", "User") %>
+                    <% }
+                    else
+                    { %>
+                        <%: Html.ActionLink("Login", "Login", "User") %>
+                    <% } %>
+                </li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <div id="footer">
+                Made by <a href="http://www.gorangligorin.com/" title="Goran Gligorin">Goran Gligorin</a> | <a href="http://www.24projects.com/" title="24 Projects">24 Projects</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

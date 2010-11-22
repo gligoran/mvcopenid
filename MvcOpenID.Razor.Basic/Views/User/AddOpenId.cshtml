@@ -1,0 +1,13 @@
+﻿@{
+    View.Title = "Add a New OpenID";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login with your OpenID to added it to your account</h2>
+
+@* The login form will use POST and go to /User/AddOpenID. *@
+@using (Html.BeginForm("AddOpenID", "User", FormMethod.Post))
+{
+    @Html.Partial("_OpenIdIdentifierField")
+    <div><input id="openidlogin" type="submit" value="Add" /></div>
+}

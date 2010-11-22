@@ -1,5 +1,5 @@
 # OpenID Starter Kit for ASP.NET MVC with Entity Framework CTP4
-***Last updated on: 21/11/2010***
+***Last updated on: 22/11/2010***
 
 ## Why Entity Framework CTP4?
 Microsoft ADO.NET Entity Framework 4.0 was released as part of .NET 4.0 on 12 April 2010. The CTP4 version is the latest preview version of Entity Framework 4.0. It is an early preview of the Code First Programming Model and Productivity Improvements for Entity Framework 4.
@@ -40,7 +40,7 @@ If you never ran any of the MvcOpenID projects using EFCTP4 this (probably) won'
 
 `The model backing the 'UserContext' context has changed since the database was created.  Either manually delete/update the database, or call Database.SetInitializer with an IDatabaseInitializer instance.  For example, the RecreateDatabaseIfModelChanges strategy will automatically delete and recreate the database, and optionally seed it with new data.`
 
-To fix this we must allow EFCTP4 to rebuild out database model. You'll achieve this by opening the Global.asax.cs file located at the root of the project. At the top of the `Application_Start()` function you see a line of code commented out:
+To fix this we must allow EFCTP4 to rebuild out database model. You'll achieve this by opening the Global.asax.cs file located at the root of the project. At the top you'll see a commented out `using` statement. Uncomment that. A bit lower, at the top of the `Application_Start()` function you see another line of code commented out:
 
 `//Database.SetInitializer<UserContext>(new RecreateDatabaseIfModelChanges<UserContext>());`
 

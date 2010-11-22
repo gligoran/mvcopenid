@@ -1,0 +1,94 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    Welcome
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<h1>OpenID Starter Kit for ASP.NET MVC</h1>
+
+<h2>Overview</h2>
+
+<p>OpenID Starter Kit for ASP.NET MVC is first and foremost it is a learning tool. I've learned a lot about OpenID while developing this and commented the code a lot. If you want to use it in this way I running the application and stepping through the code. Apart from it's education value you can also use it as a starter kit for your ASP.NET MVC based web applications.</p>
+
+<h2>Status and future plans</h2>
+
+<p>This project has just started so I will be adding more to it. Right now there is only the simple support for OpenID. </p>
+
+<p>In the future I hope to implement:</p>
+
+<ul>
+<li>Pop up window for signing in to you OpenID provider.</li>
+<li>AJAX pop up for signing in to you OpenID provider.</li>
+<li>Make all versions available for Razor and Web Froms view engines.</li>
+</ul>
+
+<h2>License</h2>
+
+<p>This project is licensed under <a href="http://mvcopenid.codeplex.com/license">Microsoft Public License (Ms-PL)</a>. See LICENSE.txt located in the source for more info.</p>
+
+<h2>Community</h2>
+
+<p>At Codeplex: <a href="http://mvcopenid.codeplex.com/discussions">http://mvcopenid.codeplex.com/discussions</a></p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>.NET Framework 4</li>
+<li>Entity Framework 4.0</li>
+<li>ASP.NET MVC 3 Release Candidate - <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=a920ccee-1397-4feb-824a-2dfefee47d54">Download here</a></li>
+</ul>
+
+<h2>Resources</h2>
+
+<p>This project uses (but is not affiliated to):</p>
+
+<ul>
+<li><a href="http://www.dotnetopenauth.net/">DotNetOpenAuth</a> developed by <a href="http://blog.nerdbank.net/">Andrew Arnott</a></li>
+</ul>
+
+<h2>Source</h2>
+
+<h3>Hosting</h3>
+
+<p>The source of this projects is located in two places:</p>
+
+<ul>
+<li>GitHub: <a href="https://github.com/gligoran/mvcopenid">https://github.com/gligoran/mvcopenid</a></li>
+<li>Codeplex: <a href="http://mvcopenid.codeplex.com/">http://mvcopenid.codeplex.com/</a></li>
+</ul>
+
+<h3>Download</h3>
+
+<p>To get the source clone to a local repository. You can use either:</p>
+
+<ul>
+<li>Git: <code>git clone git://github.com/gligoran/mvcopenid</code>.</li>
+<li>Mercurial (Hg): <code>hg clone https://hg01.codeplex.com/mvcopenid</code>.</li>
+</ul>
+
+<h2>Credits</h2>
+
+<p>This project was created by me, <a href="http://www.gorangligorin.com">Goran Gligorin</a>, as a starting point for my projects that employ OpenID as a login system.</p>
+
+<p>If you like this project tell people about it. A backlink to one or more of these locations would also be much appreciated:</p>
+
+<ul>
+<li><a href="http://www.gorangligorin.com">http://www.gorangligorin.com</a> - my personal homepage</li>
+<li><a href="http://www.24projects.com">http://www.24projects.com</a> - my website with my projects (W.I.P.)</li>
+<li><a href="https://github.com/gligoran/mvcopenid">https://github.com/gligoran/mvcopenid</a> - project's home on GitHub</li>
+<li><a href="http://mvcopenid.codeplex.com/">http://mvcopenid.codeplex.com/</a> - project's home at CodePlex</li>
+</ul>
+
+<h2>Thanks &amp; Recognition</h2>
+
+<p>I would like to thank these people:</p>
+
+<ul>
+<li><a href="http://blog.nerdbank.net/">Andrew Arnott</a>: For making DotNetOpenAuth without which this project would not exist. Also thanks to Andrew for helping me with choosing a license on StackOverflow.</li>
+<li><a href="http://programmers.stackexchange.com/users/2344/david-thornley">David Thornley</a>: Also for helping me choose a license on Programmers @ StackExchenge.</li>
+</ul>
+
+
+</asp:Content>
