@@ -13,7 +13,7 @@ In the future I hope to implement:
 * Make all versions available for Razor and Web Froms view engines.
 
 ## License
-This project is licensed under [Microsoft Public License (Ms-PL)](http://mvcopenid.codeplex.com/license). See LICENSE.txt located in the source for more info.
+This project is licensed under [Apache License, Version 2.0](http://opensource.org/licenses/apache2.0.php). See the [License tab](http://mvcopenid.codeplex.com) on CodePlex or LICENSE.txt located in the source for more info.
 
 ## Community
 At Codeplex: [http://mvcopenid.codeplex.com/discussions](http://mvcopenid.codeplex.com/discussions)
