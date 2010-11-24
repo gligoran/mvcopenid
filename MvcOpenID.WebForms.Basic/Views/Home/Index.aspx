@@ -26,7 +26,7 @@
 
 <h2>License</h2>
 
-<p>This project is licensed under <a href="http://mvcopenid.codeplex.com/license">Microsoft Public License (Ms-PL)</a>. See LICENSE.txt located in the source for more info.</p>
+<p>This project is licensed under <a href="http://opensource.org/licenses/apache2.0.php"> Apache License, Version 2.0</a>. See the <a href="http://mvcopenid.codeplex.com">License tab</a> on CodePlex or LICENSE.txt in the source for more info.</p>
 
 <h2>Community</h2>
 
