@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace MvcOpenID.WebForms.Basic.Models
+namespace MvcOpenID.ASPX.Basic.Models
 {
     /// <summary>
     /// Entity class for storing OpenIDs.

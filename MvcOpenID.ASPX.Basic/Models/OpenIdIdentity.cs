@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Security.Principal;
 
-namespace MvcOpenID.WebForms.Basic.Models
+namespace MvcOpenID.ASPX.Basic.Models
 {
     /// <summary>
     /// IIdentity implementation of OpenId logins.

@@ -5,11 +5,11 @@ using DotNetOpenAuth.OpenId.RelyingParty;
 using DotNetOpenAuth.OpenId;
 using DotNetOpenAuth.Messaging;
 using DotNetOpenAuth.OpenId.Extensions.SimpleRegistration;
-using MvcOpenID.WebForms.Basic.Models;
+using MvcOpenID.ASPX.Basic.Models;
 using System.Web.Security;
-using MvcOpenID.WebForms.Basic.ViewModels;
+using MvcOpenID.ASPX.Basic.ViewModels;
 
-namespace MvcOpenID.WebForms.Basic.Controllers
+namespace MvcOpenID.ASPX.Basic.Controllers
 {
     public class UserController : Controller
     {

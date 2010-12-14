@@ -1,19 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MvcOpenID.WebForms.Basic.ViewModels.RegistrationViewModel>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MvcOpenID.ASPX.Basic.Models.User>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Registration
+    Edit User
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Registration</h2>
+<h2>Edit</h2>
 
-<div>To complete the registration for <strong><%: Model.Username %></strong> with OpenID <strong><%: Model.OpenIdUrl %></strong> please fill out the following data:</div>
-<% using (Html.BeginForm("Register", "User", new { returnUrl = Model.ReturnUrl }, FormMethod.Post))
-{ %>
+<% using (Html.BeginForm()) { %>
     <%: Html.ValidationSummary(true) %>
     <fieldset>
         <legend>Fields</legend>
+        
+        <%: Html.ValidationMessage("general_error") %>
+        <%: Html.HiddenFor(model => model.UserId) %>
 
         <div class="editor-label">
             <%: Html.LabelFor(model => model.Username) %>
@@ -38,16 +39,16 @@
             <%: Html.EditorFor(model => model.FullName) %>
             <%: Html.ValidationMessageFor(model => model.FullName) %>
         </div>
-        
-        <input type="hidden" name="identifier" value="<%: Model.OpenIdUrl %>" />
-        <input type="hidden" name="rememberMe" value="<%: Model.RememberMe %>" />
 
         <p>
-            <input type="submit" value="Register" />
+            <input type="submit" value="Save" />
         </p>
     </fieldset>
 <% } %>
 
+<div>
+    <%: Html.ActionLink("Back", "Index") %>
+</div>
 
 </asp:Content>
 

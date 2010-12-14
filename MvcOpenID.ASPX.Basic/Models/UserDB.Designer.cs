@@ -18,11 +18,11 @@ using System.Runtime.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
-[assembly: EdmRelationshipAttribute("MvcOpenID.WebForms.Basic", "FK_UserOpenId", "Users", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(MvcOpenID.WebForms.Basic.Models.User), "OpenIds", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(MvcOpenID.WebForms.Basic.Models.OpenId), true)]
+[assembly: EdmRelationshipAttribute("MvcOpenID.ASPX.Basic", "FK_UserOpenId", "Users", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(MvcOpenID.ASPX.Basic.Models.User), "OpenIds", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(MvcOpenID.ASPX.Basic.Models.OpenId), true)]
 
 #endregion
 
-namespace MvcOpenID.WebForms.Basic.Models
+namespace MvcOpenID.ASPX.Basic.Models
 {
     #region Contexts
     
@@ -132,7 +132,7 @@ namespace MvcOpenID.WebForms.Basic.Models
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="MvcOpenID.WebForms.Basic", Name="OpenId")]
+    [EdmEntityTypeAttribute(NamespaceName="MvcOpenID.ASPX.Basic", Name="OpenId")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class OpenId : EntityObject
@@ -242,16 +242,16 @@ namespace MvcOpenID.WebForms.Basic.Models
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MvcOpenID.WebForms.Basic", "FK_UserOpenId", "Users")]
+        [EdmRelationshipNavigationPropertyAttribute("MvcOpenID.ASPX.Basic", "FK_UserOpenId", "Users")]
         public User User
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("MvcOpenID.WebForms.Basic.FK_UserOpenId", "Users").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("MvcOpenID.ASPX.Basic.FK_UserOpenId", "Users").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("MvcOpenID.WebForms.Basic.FK_UserOpenId", "Users").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("MvcOpenID.ASPX.Basic.FK_UserOpenId", "Users").Value = value;
             }
         }
         /// <summary>
@@ -263,13 +263,13 @@ namespace MvcOpenID.WebForms.Basic.Models
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("MvcOpenID.WebForms.Basic.FK_UserOpenId", "Users");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("MvcOpenID.ASPX.Basic.FK_UserOpenId", "Users");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("MvcOpenID.WebForms.Basic.FK_UserOpenId", "Users", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("MvcOpenID.ASPX.Basic.FK_UserOpenId", "Users", value);
                 }
             }
         }
@@ -280,7 +280,7 @@ namespace MvcOpenID.WebForms.Basic.Models
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="MvcOpenID.WebForms.Basic", Name="User")]
+    [EdmEntityTypeAttribute(NamespaceName="MvcOpenID.ASPX.Basic", Name="User")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class User : EntityObject
@@ -416,18 +416,18 @@ namespace MvcOpenID.WebForms.Basic.Models
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MvcOpenID.WebForms.Basic", "FK_UserOpenId", "OpenIds")]
+        [EdmRelationshipNavigationPropertyAttribute("MvcOpenID.ASPX.Basic", "FK_UserOpenId", "OpenIds")]
         public EntityCollection<OpenId> OpenIds
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<OpenId>("MvcOpenID.WebForms.Basic.FK_UserOpenId", "OpenIds");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<OpenId>("MvcOpenID.ASPX.Basic.FK_UserOpenId", "OpenIds");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<OpenId>("MvcOpenID.WebForms.Basic.FK_UserOpenId", "OpenIds", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<OpenId>("MvcOpenID.ASPX.Basic.FK_UserOpenId", "OpenIds", value);
                 }
             }
         }

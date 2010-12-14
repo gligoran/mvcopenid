@@ -4,11 +4,11 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="MvcOpenID.WebForms.Basic.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
-        <EntityContainer Name="MvcOpenIDWebFormsBasicStoreContainer">
-          <EntitySet Name="OpenIds" EntityType="MvcOpenID.WebForms.Basic.Store.OpenIds" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Users" EntityType="MvcOpenID.WebForms.Basic.Store.Users" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK_UserOpenId" Association="MvcOpenID.WebForms.Basic.Store.FK_UserOpenId">
+      <Schema Namespace="MvcOpenID.ASPX.Basic.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MvcOpenIDASPXBasicStoreContainer">
+          <EntitySet Name="OpenIds" EntityType="MvcOpenID.ASPX.Basic.Store.OpenIds" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="MvcOpenID.ASPX.Basic.Store.Users" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_UserOpenId" Association="MvcOpenID.ASPX.Basic.Store.FK_UserOpenId">
             <End Role="Users" EntitySet="Users" />
             <End Role="OpenIds" EntitySet="OpenIds" />
           </AssociationSet>
@@ -31,10 +31,10 @@
           <Property Name="FullName" Type="nvarchar" Nullable="false" MaxLength="255" />
         </EntityType>
         <Association Name="FK_UserOpenId">
-          <End Role="Users" Type="MvcOpenID.WebForms.Basic.Store.Users" Multiplicity="1">
+          <End Role="Users" Type="MvcOpenID.ASPX.Basic.Store.Users" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="OpenIds" Type="MvcOpenID.WebForms.Basic.Store.OpenIds" Multiplicity="*" />
+          <End Role="OpenIds" Type="MvcOpenID.ASPX.Basic.Store.OpenIds" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
               <PropertyRef Name="UserId" />
@@ -48,11 +48,11 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="MvcOpenID.WebForms.Basic" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <Schema Namespace="MvcOpenID.ASPX.Basic" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="UserContext" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="OpenIds" EntityType="MvcOpenID.WebForms.Basic.OpenId" />
-          <EntitySet Name="Users" EntityType="MvcOpenID.WebForms.Basic.User" />
-          <AssociationSet Name="FK_UserOpenId" Association="MvcOpenID.WebForms.Basic.FK_UserOpenId">
+          <EntitySet Name="OpenIds" EntityType="MvcOpenID.ASPX.Basic.OpenId" />
+          <EntitySet Name="Users" EntityType="MvcOpenID.ASPX.Basic.User" />
+          <AssociationSet Name="FK_UserOpenId" Association="MvcOpenID.ASPX.Basic.FK_UserOpenId">
             <End Role="Users" EntitySet="Users" />
             <End Role="OpenIds" EntitySet="OpenIds" />
           </AssociationSet>
@@ -64,7 +64,7 @@
           <Property Name="OpenIdId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
           <Property Name="OpenIdUrl" Type="String" Nullable="false" MaxLength="900" Unicode="true" FixedLength="false" />
-          <NavigationProperty Name="User" Relationship="MvcOpenID.WebForms.Basic.FK_UserOpenId" FromRole="OpenIds" ToRole="Users" />
+          <NavigationProperty Name="User" Relationship="MvcOpenID.ASPX.Basic.FK_UserOpenId" FromRole="OpenIds" ToRole="Users" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -74,13 +74,13 @@
           <Property Name="Username" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="FullName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
-          <NavigationProperty Name="OpenIds" Relationship="MvcOpenID.WebForms.Basic.FK_UserOpenId" FromRole="Users" ToRole="OpenIds" />
+          <NavigationProperty Name="OpenIds" Relationship="MvcOpenID.ASPX.Basic.FK_UserOpenId" FromRole="Users" ToRole="OpenIds" />
         </EntityType>
         <Association Name="FK_UserOpenId">
-          <End Role="Users" Type="MvcOpenID.WebForms.Basic.User" Multiplicity="1">
+          <End Role="Users" Type="MvcOpenID.ASPX.Basic.User" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="OpenIds" Type="MvcOpenID.WebForms.Basic.OpenId" Multiplicity="*" />
+          <End Role="OpenIds" Type="MvcOpenID.ASPX.Basic.OpenId" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
               <PropertyRef Name="UserId" />
@@ -95,13 +95,13 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="MvcOpenIDWebFormsBasicStoreContainer" CdmEntityContainer="UserContext">
-          <EntitySetMapping Name="OpenIds"><EntityTypeMapping TypeName="MvcOpenID.WebForms.Basic.OpenId"><MappingFragment StoreEntitySet="OpenIds">
+        <EntityContainerMapping StorageEntityContainer="MvcOpenIDASPXBasicStoreContainer" CdmEntityContainer="UserContext">
+          <EntitySetMapping Name="OpenIds"><EntityTypeMapping TypeName="MvcOpenID.ASPX.Basic.OpenId"><MappingFragment StoreEntitySet="OpenIds">
             <ScalarProperty Name="OpenIdId" ColumnName="OpenIdId" />
             <ScalarProperty Name="UserId" ColumnName="UserId" />
             <ScalarProperty Name="OpenIdUrl" ColumnName="OpenIdUrl" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
-          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="MvcOpenID.WebForms.Basic.User"><MappingFragment StoreEntitySet="Users">
+          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="MvcOpenID.ASPX.Basic.User"><MappingFragment StoreEntitySet="Users">
             <ScalarProperty Name="UserId" ColumnName="UserId" />
             <ScalarProperty Name="Username" ColumnName="Username" />
             <ScalarProperty Name="Email" ColumnName="Email" />
@@ -128,9 +128,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="UserDB">
-        <EntityTypeShape EntityType="MvcOpenID.WebForms.Basic.OpenId" Width="1.5" PointX="3" PointY="1" Height="1.7879850260416668" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcOpenID.WebForms.Basic.User" Width="1.5" PointX="0.75" PointY="0.875" Height="1.9802864583333335" IsExpanded="true" />
-        <AssociationConnector Association="MvcOpenID.WebForms.Basic.FK_UserOpenId" ManuallyRouted="false">
+        <EntityTypeShape EntityType="MvcOpenID.ASPX.Basic.OpenId" Width="1.5" PointX="3" PointY="1" Height="1.7879850260416668" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcOpenID.ASPX.Basic.User" Width="1.5" PointX="0.75" PointY="0.875" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="MvcOpenID.ASPX.Basic.FK_UserOpenId" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="1.8939925130208333" />
           <ConnectorPoint PointX="3" PointY="1.8939925130208333" />
         </AssociationConnector>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Diagnostics.Contracts;
 
-namespace MvcOpenID.WebForms.Basic.Models
+namespace MvcOpenID.ASPX.Basic.Models
 {
     /// <summary>
     /// User info that is inside the authentication cookie.

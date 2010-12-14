@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics.Contracts;
 
-namespace MvcOpenID.WebForms.Basic.ViewModels
+namespace MvcOpenID.ASPX.Basic.ViewModels
 {
     /// <summary>
     /// View model used for new user registration.

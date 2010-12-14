@@ -5,7 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Contracts;
 
-namespace MvcOpenID.WebForms.Basic.Models
+namespace MvcOpenID.ASPX.Basic.Models
 {
     /// <summary>
     /// Entity class for storing Users.

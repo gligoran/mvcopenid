@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using MvcOpenID.WebForms.Basic.Models;
+using MvcOpenID.ASPX.Basic.Models;
 using System.Security.Principal;
 //using System.Data.Entity.Infrastructure;
 
-namespace MvcOpenID.WebForms.Basic
+namespace MvcOpenID.ASPX.Basic
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801

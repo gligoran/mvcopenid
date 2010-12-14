@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Diagnostics.Contracts;
 
-namespace MvcOpenID.WebForms.Basic.Models
+namespace MvcOpenID.ASPX.Basic.Models
 {
     public class UserRepository
     {

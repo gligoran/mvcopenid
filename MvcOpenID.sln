@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Razor", "Razor", "{8BB0314F-D6FA-4616-9DF1-D98DCD820022}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebForms", "WebForms", "{608CAA48-1672-4FFC-983D-3DF1FF71A12A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASPX", "ASPX", "{608CAA48-1672-4FFC-983D-3DF1FF71A12A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcOpenID.Razor.Basic", "MvcOpenID.Razor.Basic\MvcOpenID.Razor.Basic.csproj", "{5826412D-3BC1-4746-81CB-424F3D2E5663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcOpenID.WebForms.Basic", "MvcOpenID.WebForms.Basic\MvcOpenID.WebForms.Basic.csproj", "{5E92E95C-D7B8-4760-9249-8629544CD513}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcOpenID.ASPX.Basic", "MvcOpenID.ASPX.Basic\MvcOpenID.ASPX.Basic.csproj", "{5E92E95C-D7B8-4760-9249-8629544CD513}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
