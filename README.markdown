@@ -21,7 +21,9 @@ At Codeplex: [http://mvcopenid.codeplex.com/discussions](http://mvcopenid.codepl
 ## Requirements
 * .NET Framework 4
 * Entity Framework 4.0
-* ASP.NET MVC 3 Release Candidate - [Download here](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=a920ccee-1397-4feb-824a-2dfefee47d54)
+* ASP.NET MVC 3 (Release Candidate 2) - [Download here](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=955d593e-cbd1-4ed1-88eb-02ff79dd74d8&displaylang=en)
+* Code Contracts - [Download here](http://msdn.microsoft.com/en-us/devlabs/dd491992.aspx)
+* SQL Server 2008 R2 Express [https://www.microsoft.com/express/Database/Default.aspx](https://www.microsoft.com/express/Database/Default.aspx)
 
 ## Resources
 This project uses (but is not affiliated to):
@@ -47,7 +49,7 @@ This project was created by me, [Goran Gligorin](http://www.gorangligorin.com), 
 If you like this project tell people about it. A backlink to one or more of these locations would also be much appreciated:
 
 * [http://www.gorangligorin.com](http://www.gorangligorin.com) - my personal homepage
-* [http://www.24projects.com](http://www.24projects.com) - my website with my projects (W.I.P.)
+* [http://www.24projects.com](http://www.24projects.com) - my future website that will host my projects (W.I.P.)
 * [https://github.com/gligoran/mvcopenid](https://github.com/gligoran/mvcopenid) - project's home on GitHub
 * [http://mvcopenid.codeplex.com/](http://mvcopenid.codeplex.com/) - project's home at CodePlex
 
