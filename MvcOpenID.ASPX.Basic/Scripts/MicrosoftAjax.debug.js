@@ -4798,11 +4798,11 @@ Sys._Application = function Sys$_Application() {
                 delete this._timerCookie;
             }
             if (this._endRequestHandler) {
-                Sys.ASPX.PageRequestManager.getInstance().remove_endRequest(this._endRequestHandler);
+                Sys.WebForms.PageRequestManager.getInstance().remove_endRequest(this._endRequestHandler);
                 delete this._endRequestHandler;
             }
             if (this._beginRequestHandler) {
-                Sys.ASPX.PageRequestManager.getInstance().remove_beginRequest(this._beginRequestHandler);
+                Sys.WebForms.PageRequestManager.getInstance().remove_beginRequest(this._beginRequestHandler);
                 delete this._beginRequestHandler;
             }
             if (window.pageUnload) {
@@ -4895,11 +4895,11 @@ Sys._Application = function Sys$_Application() {
             Sys._Application.callBaseMethod(this, 'initialize');
             this._raiseInit();
             if (this.get_stateString) {
-                if (Sys.ASPX && Sys.ASPX.PageRequestManager) {
+                if (Sys.WebForms && Sys.WebForms.PageRequestManager) {
                     this._beginRequestHandler = Function.createDelegate(this, this._onPageRequestManagerBeginRequest);
-                    Sys.ASPX.PageRequestManager.getInstance().add_beginRequest(this._beginRequestHandler);
+                    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(this._beginRequestHandler);
                     this._endRequestHandler = Function.createDelegate(this, this._onPageRequestManagerEndRequest);
-                    Sys.ASPX.PageRequestManager.getInstance().add_endRequest(this._endRequestHandler);
+                    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(this._endRequestHandler);
                 }
                 var loadedEntry = this.get_stateString();
                 if (loadedEntry !== this._currentEntry) {
