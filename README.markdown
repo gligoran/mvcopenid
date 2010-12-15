@@ -1,16 +1,16 @@
-# OpenID Starter Kit for ASP.NET MVC
+# MvcOpenID - *An OpenID Starter Kit for ASP.NET MVC*
 
 ## Overview
-OpenID Starter Kit for ASP.NET MVC is first and foremost it is a learning tool. I've learned a lot about OpenID while developing this and commented the code a lot. If you want to use it in this way I running the application and stepping through the code. Apart from it's education value you can also use it as a starter kit for your ASP.NET MVC based web applications.
+MvcOpenID is an OpenID starter kit for ASP.NET MVC. It is first and foremost a learning tool. I've learned a lot about OpenID while developing this and commented the code a lot. Running the application and stepping through the code is the best and probably the fastest way to learn. Apart from it's educational value you can also use it as a starter kit for your ASP.NET MVC based web applications.
 
 ## Status and future plans
-This project has just started so I will be adding more to it. Right now there is only the simple support for OpenID. 
+This project has just started so I will be adding more to it. Right now there is only the basic support for OpenID. 
 
 In the future I hope to implement:
 
 * Pop up window for signing in to you OpenID provider.
 * AJAX pop up for signing in to you OpenID provider.
-* Make all versions available for Razor and Web Froms view engines.
+* Make all versions available for Razor and ASPX view engines.
 
 ## License
 This project is licensed under [Apache License, Version 2.0](http://opensource.org/licenses/apache2.0.php). See the [License tab](http://mvcopenid.codeplex.com) on CodePlex or LICENSE.txt in the source for more info.
@@ -57,4 +57,4 @@ If you like this project tell people about it. A backlink to one or more of thes
 I would like to thank these people:
 
 * [Andrew Arnott](http://blog.nerdbank.net/): For making DotNetOpenAuth without which this project would not exist. Also thanks to Andrew for helping me with choosing a license on StackOverflow.
-* [David Thornley](http://programmers.stackexchange.com/users/2344/david-thornley): Also for helping me choose a license on Programmers @ StackExchenge.
+* [David Thornley](http://programmers.stackexchange.com/users/2344/david-thornley): Also for helping me choose a license on Programmers at StackExchenge.

@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE.txt = LICENSE.txt
 		README.markdown = README.markdown
 		Starter.htm = Starter.htm
-		SwitchToEFCTP4.markdown = SwitchToEFCTP4.markdown
+		SwitchToEFCTP5.markdown = SwitchToEFCTP5.markdown
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Razor", "Razor", "{8BB0314F-D6FA-4616-9DF1-D98DCD820022}"

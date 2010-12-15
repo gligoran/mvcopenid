@@ -65,7 +65,7 @@ namespace MvcOpenID.ASPX.Basic.Models
         /// <remarks>User deletion is cascading which means that all of user's OpenIDs will get deleted from the database when the user is deleted.</remarks>
         public void RemoveUser(User user)
         {
-            //userDb.Users.Remove(user); //EFCTP4
+            //userDb.Users.Remove(user); //EFCTP5
             userDb.Users.DeleteObject(user); //EF4
         }
 
@@ -87,7 +87,7 @@ namespace MvcOpenID.ASPX.Basic.Models
         {
             Contract.Requires<ArgumentNullException>(openid != null);
 
-            //userDb.OpenIds.Add(openid); //EFCTP4
+            //userDb.OpenIds.Add(openid); //EFCTP5
             userDb.OpenIds.AddObject(openid); //EF4
         }
 
@@ -100,7 +100,7 @@ namespace MvcOpenID.ASPX.Basic.Models
             var openid = userDb.OpenIds.SingleOrDefault(o => o.OpenIdUrl == identifier);
             if (openid.User.OpenIds.Count > 1)
             {
-                //userDb.OpenIds.Remove(openid); //EFTCP4
+                //userDb.OpenIds.Remove(openid); //EFTCP5
                 userDb.OpenIds.DeleteObject(openid); //EF4
             }
             else

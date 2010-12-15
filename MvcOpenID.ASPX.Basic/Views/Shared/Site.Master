@@ -19,12 +19,13 @@
 
         <div id="header">
             <div id="title">
-                <h1>OpenID Starter Kit for ASP.NET MVC</h1>
+                <h1>MvcOpenId</h1>
+                <div class="subtitle">An OpenID Starter Kit for ASP.NET MVC</div>
             </div>
 
             <ul id="menu">
                 <li><%: Html.ActionLink("Home", "Index", "Home") %></li>
-                <li><%: Html.ActionLink("EFCTP4", "EFCTP4", "Home") %></li>
+                <li><%: Html.ActionLink("EFCTP5", "EFCTP5", "Home") %></li>
                 <li><%: Html.ActionLink("User", "Index", "User") %></li>
                 <li>
                     <% if (Request.IsAuthenticated)

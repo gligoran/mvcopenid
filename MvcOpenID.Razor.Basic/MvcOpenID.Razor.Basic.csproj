@@ -105,13 +105,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\MvcOpenID.mdf" />
-    <Content Include="App_Data\MvcOpenID_log.ldf">
+    <Content Include="App_Data\MvcOpenID_log.LDF">
       <DependentUpon>MvcOpenID.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\EFCTP4.cshtml" />
+    <Content Include="Views\Home\EFCTP5.cshtml" />
     <Content Include="Views\User\AddOpenId.cshtml" />
     <Content Include="Views\User\Delete.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
@@ -151,6 +151,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EntityDeploy Include="Models\UserDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

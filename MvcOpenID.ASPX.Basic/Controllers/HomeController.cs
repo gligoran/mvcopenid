@@ -13,7 +13,7 @@ namespace MvcOpenID.ASPX.Basic.Controllers
             return View();
         }
 
-        public ActionResult EFCTP4()
+        public ActionResult EFCTP5()
         {
             return View();
         }

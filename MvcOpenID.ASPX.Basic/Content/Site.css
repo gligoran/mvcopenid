@@ -18,15 +18,18 @@ a:link
     color: #96c120;
     text-decoration: underline;
 }
+
 a:visited
 {
     color: #b9d358;
 }
+
 a:hover
 {
     color: #96c120;
     text-decoration: none;
 }
+
 a:active
 {
     color: #b9d358;
@@ -42,6 +45,7 @@ code
 {
     font-size: 1.6em;
     color: #440000;
+    background-color: #DDDDDD;
 }
 
 /* HEADINGS   
@@ -59,18 +63,22 @@ h1
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 h2
 {
     padding: 0 0 10px 0;
 }
+
 h3
 {
     font-size: 1.2em;
 }
+
 h4
 {
     font-size: 1.1em;
 }
+
 h5, h6
 {
     font-size: 1em;
@@ -113,6 +121,19 @@ page width. Or, you can specify an exact pixel width. */
     line-height: 2em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px !important;
+}
+
+#header #title h1
+{
+    margin-top: 16px;
+    line-height: 32px;
+}
+
+#header #title .subtitle
+{
+    font-size: 12px;
+    color: white;
+    font-style: italic;
 }
 
 #main
@@ -189,32 +210,32 @@ ul#menu li.selected a
 /* FORM LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
 
-fieldset 
+fieldset
 {
     margin: 1em 0;
     padding: 1em;
     border: 1px solid #CCC;
 }
 
-fieldset p 
+fieldset p
 {
     margin: 2px 12px 10px 10px;
 }
 
-legend 
+legend
 {
     font-size: 1.1em;
     font-weight: 600;
     padding: 2px 4px 8px 4px;
 }
 
-input[type="text"] 
+input[type="text"]
 {
     width: 200px;
     border: 1px solid #CCC;
 }
 
-input[type="password"] 
+input[type="password"]
 {
     width: 200px;
     border: 1px solid #CCC;
@@ -223,24 +244,24 @@ input[type="password"]
 /* TABLE
 ----------------------------------------------------------*/
 
-table 
+table
 {
-  border: solid 1px #e8eef4;
-  border-collapse: collapse;
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
 }
 
-table td 
+table td
 {
-  padding: 5px;   
-  border: solid 1px #e8eef4;
+    padding: 5px;
+    border: solid 1px #e8eef4;
 }
 
 table th
 {
-  padding: 6px 5px;
-  text-align: left;
-  background-color: #e8eef4; 
-  border: solid 1px #e8eef4;   
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
 }
 
 /* MISC  
@@ -252,28 +273,28 @@ table th
 
 .error
 {
-    color:Red;
+    color: Red;
 }
 
 #menucontainer
 {
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 div#title
 {
-    display:block;
-    float:left;
-    text-align:left;
+    display: block;
+    float: left;
+    text-align: left;
 }
 
 #logindisplay
 {
-    font-size:1.1em;
-    display:block;
-    text-align:right;
-    margin:10px;
-    color:White;
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
 }
 
 #logindisplay a:link
@@ -325,16 +346,14 @@ div#title
 
 /* Styles for editor and display helpers
 ----------------------------------------------------------*/
-.display-label,
-.editor-label
+.display-label, .editor-label
 {
     margin: 1em 0 0 0;
 }
 
-.display-field,
-.editor-field
+.display-field, .editor-field
 {
-    margin:0.5em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 .text-box
@@ -352,6 +371,8 @@ div#title
     width: 6em;
 }
 
+/* OpenID
+----------------------------------------------------------*/
 #openid_identifier
 {
     width: 400px;
