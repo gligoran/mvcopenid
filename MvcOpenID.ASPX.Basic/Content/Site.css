@@ -3,6 +3,11 @@ The base color for this template is #5c87b2. If you'd like
 to use a different color start by replacing all instances of
 #5c87b2 with your new color.
 ----------------------------------------------------------*/
+html
+{
+    background-color: #96c120;
+}
+
 body
 {
     background-color: #96c120;
@@ -229,18 +234,6 @@ legend
     padding: 2px 4px 8px 4px;
 }
 
-input[type="text"]
-{
-    width: 200px;
-    border: 1px solid #CCC;
-}
-
-input[type="password"]
-{
-    width: 200px;
-    border: 1px solid #CCC;
-}
-
 /* TABLE
 ----------------------------------------------------------*/
 
@@ -369,11 +362,4 @@ div#title
 .tri-state
 {
     width: 6em;
-}
-
-/* OpenID
-----------------------------------------------------------*/
-#openid_identifier
-{
-    width: 400px;
 }

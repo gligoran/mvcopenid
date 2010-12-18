@@ -21,6 +21,10 @@
 <li>Make all versions available for Razor and ASPX view engines.</li>
 </ul>
 
+<h2>Request to users</h2>
+
+<p>Currently the DotNetOpenAuth library's ASP.NET MVC HtmlHelper extensions do not support Razor view engine. This is proving to be quite a road block. I've posted <a href="http://mvcopenid.codeplex.com/goo.gl/OaAGE">the idea</a> to fix this on DotNetOpenAuth's UserVoice. I would very much appreciate your votes on this matter.</p>
+
 <h2>License</h2>
 
 <p>This project is licensed under <a href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a>. See the <a href="http://mvcopenid.codeplex.com">License tab</a> on CodePlex or LICENSE.txt in the source for more info.</p>
@@ -45,6 +49,7 @@
 
 <ul>
 <li><a href="http://www.dotnetopenauth.net/">DotNetOpenAuth</a> developed by <a href="http://blog.nerdbank.net/">Andrew Arnott</a></li>
+<li><a href="http://code.google.com/p/openid-selector/">openid-selector</a></li>
 </ul>
 
 <h2>Source</h2>
@@ -88,5 +93,6 @@
 <li><a href="http://blog.nerdbank.net/">Andrew Arnott</a>: For making DotNetOpenAuth without which this project would not exist. Also thanks to Andrew for helping me with choosing a license on StackOverflow.</li>
 <li><a href="http://programmers.stackexchange.com/users/2344/david-thornley">David Thornley</a>: Also for helping me choose a license on Programmers at StackExchenge.</li>
 </ul>
+
 
 </asp:Content>

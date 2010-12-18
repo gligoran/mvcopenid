@@ -1,14 +1,22 @@
 ﻿@{
-    ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Login or Create New Account";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head {
+	<link href="@Url.Content("~/content/openid/openid.css")" rel="stylesheet" type="text/css" />
+
+	<script src="@Url.Content("~/scripts/openid/openid-jquery.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/scripts/openid/openid-en.js")" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			openid.init('openid_identifier');
+		});
+	</script>
 }
 
-<h2>Login</h2>
-
+<h2>Login or Create New Account</h2>
 @* The login form will use POST and go to /User/Login. If returnUrl was set we leave it in the url. *@
-@using (Html.BeginForm("Login", "User", new { returnUrl = Request.QueryString["returnUrl"] }, FormMethod.Post))
-{
-    @Html.Partial("_OpenIdIdentifierField")
-    <div>Remember me? @Html.CheckBox("remeberMe", true)</div>
-    <div><input id="openidlogin" type="submit" value="Login" /></div>
+@using (Html.BeginForm("Login", "User", new { returnUrl = Request.QueryString["returnUrl"] }, FormMethod.Post, new { id = "openid_form" }))
+{	
+	@Html.Partial("_OpenIdSelector")
 }

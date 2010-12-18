@@ -80,7 +80,7 @@ namespace MvcOpenID.Razor.Basic.Controllers
         /// <param name="returnUrl">The URL we will return to when the loing process is complete.</param>
         /// <returns></returns>
         [AcceptVerbs(HttpVerbs.Post | HttpVerbs.Get), ValidateInput(false)]
-        public ActionResult Login(string openid_identifier, string returnUrl, bool rememberMe = false)
+        public ActionResult Login(string openid_identifier, string returnUrl)
         {
             var response = openId.GetResponse();
 
@@ -121,7 +121,7 @@ namespace MvcOpenID.Razor.Basic.Controllers
                         {
                             // This user is already registered.                            
                             // Now we need to let ASP.NET know about the user.
-                            IssueFormsAuthenticationTicket(user, rememberMe);
+                            IssueFormsAuthenticationTicket(user);
 
                             // Now let's actually get to where we wanted to go or to the homepage
                             if (string.IsNullOrEmpty(returnUrl))
@@ -193,7 +193,7 @@ namespace MvcOpenID.Razor.Basic.Controllers
         /// <param name="rememberMe">Determines if the user login is persistant or not.</param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult Register(User user, string identifier, string returnUrl, bool rememberMe)
+        public ActionResult Register(User user, string identifier, string returnUrl)
         {
             //The registration form has been submitted
             try
@@ -210,7 +210,7 @@ namespace MvcOpenID.Razor.Basic.Controllers
                     users.SaveChanges();
 
                     // Now let's login out user to out application
-                    IssueFormsAuthenticationTicket(user, rememberMe);
+                    IssueFormsAuthenticationTicket(user);
 
                     // We're done, let's get back to where we started from.
                     if (string.IsNullOrEmpty(returnUrl))
@@ -459,17 +459,16 @@ namespace MvcOpenID.Razor.Basic.Controllers
         /// Issues the FormsAuthenticationTicket to let ASP.NET know that a user is logged in.
         /// </summary>
         /// <param name="user">User that has logged in.</param>
-        private void IssueFormsAuthenticationTicket(User user, bool? rememberMe)
+        private void IssueFormsAuthenticationTicket(User user)
         {
             // We need to make a FormsAuthenticationTicket.
             // To store UserInfo data in it we use the 2nd overload.
-            // Note that if rememberMe is false the cookie is stored in the session and will expire when the session is over.
             FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(
                 1,
                 user.Username,
                 DateTime.Now,
                 DateTime.Now.AddDays(14),
-                rememberMe ?? false,
+                true,
                 UserInfo.FromUser(user).ToString());
 
             // Now we encrypt the ticket so no one can read it...
