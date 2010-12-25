@@ -5,7 +5,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using MvcOpenID.ASPX.Basic.Models;
-//using System.Data.Entity.Database;
+using System.Data.Entity.Database; //EFCodeFirst
 
 namespace MvcOpenID.ASPX.Basic
 {
@@ -33,8 +33,7 @@ namespace MvcOpenID.ASPX.Basic
 
         protected void Application_Start()
         {
-            // If using EFCTP5 uncomment this:
-            //DbDatabase.SetInitializer<UserContext>(new DropCreateDatabaseIfModelChanges<UserContext>());
+            DbDatabase.SetInitializer<UserContext>(new DropCreateDatabaseIfModelChanges<UserContext>()); //EFCodeFirst
 
             AreaRegistration.RegisterAllAreas();
 
