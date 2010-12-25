@@ -29,7 +29,7 @@
                 <li>
                     <%: Html.ActionLink("Home", "Index", "Home") %></li>
                 <li>
-                    <%: Html.ActionLink("EFCTP5", "EFCTP5", "Home") %></li>
+                    <%: Html.ActionLink("EFCodeFirst", "EFCodeFirst", "Home")%></li>
                 <li>
                     <%: Html.ActionLink("User", "Index", "User") %></li>
                 <li>

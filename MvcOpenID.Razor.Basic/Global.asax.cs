@@ -5,7 +5,6 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using MvcOpenID.Razor.Basic.Models;
-//using System.Data.Entity.Database;
 
 namespace MvcOpenID.Razor.Basic
 {
@@ -33,9 +32,6 @@ namespace MvcOpenID.Razor.Basic
 
         protected void Application_Start()
         {
-            // If using EFCTP5 uncomment this:
-            //DbDatabase.SetInitializer<UserContext>(new DropCreateDatabaseIfModelChanges<UserContext>());
-
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);

@@ -13,7 +13,7 @@ namespace MvcOpenID.ASPX.Basic.Controllers
             return View();
         }
 
-        public ActionResult EFCTP5()
+        public ActionResult EFCodeFirst()
         {
             return View();
         }

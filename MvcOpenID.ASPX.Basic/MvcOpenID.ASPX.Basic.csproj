@@ -204,7 +204,7 @@
     <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\openid\openid-en.js" />
     <Content Include="Scripts\openid\openid-jquery.js" />
-    <Content Include="Views\Home\EFCTP5.aspx" />
+    <Content Include="Views\Home\EFCodeFirst.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\User\AddOpenId.aspx" />
     <Content Include="Views\User\Delete.aspx" />
