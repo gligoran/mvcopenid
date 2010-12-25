@@ -12,9 +12,6 @@ In the future I hope to implement:
 * AJAX pop up for signing in to you OpenID provider.
 * Make all versions available for Razor and ASPX view engines.
 
-## Request to users
-Currently the DotNetOpenAuth library's ASP.NET MVC HtmlHelper extensions do not support Razor view engine. This is proving to be quite a road block. I've posted [the idea](http://mvcopenid.codeplex.com/goo.gl/OaAGE) to fix this on DotNetOpenAuth's UserVoice. I would very much appreciate your votes on this matter.
-
 ## License
 This project is licensed under [Apache License, Version 2.0](http://opensource.org/licenses/apache2.0.php). See the [License tab](http://mvcopenid.codeplex.com) on CodePlex or LICENSE.txt in the source for more info.
 
