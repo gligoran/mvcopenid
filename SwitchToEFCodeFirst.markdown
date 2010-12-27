@@ -1,5 +1,5 @@
 # MvcOpenID with Entity Framework 4 Code-First
-***Last updated on: 12/15/2010***
+***Last updated on: 12/25/2010***
 
 ## Why Entity Framework Code-First?
 Microsoft ADO.NET Entity Framework 4.0 was released as part of .NET 4.0 on 12 April 2010. Since then Microsoft released 5 preview versions which demonstrate what Entity Framework will bring in the future. The CTP5 version is the latest (released 12/6/2010) of these preview versions. It is a preview of the Code First Programming Model and Productivity Improvements for Entity Framework 4. The final release of Code First is expected in the first quarter of next year (Q1 of 2011).

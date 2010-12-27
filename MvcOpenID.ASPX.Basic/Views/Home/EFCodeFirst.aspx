@@ -8,7 +8,7 @@
 
 <h1>MvcOpenID with Entity Framework 4 Code-First</h1>
 
-<p><strong><em>Last updated on: 12/15/2010</em></strong></p>
+<p><strong><em>Last updated on: 12/25/2010</em></strong></p>
 
 <h2>Why Entity Framework Code-First?</h2>
 
