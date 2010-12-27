@@ -21,6 +21,7 @@ At Codeplex: [http://mvcopenid.codeplex.com/discussions](http://mvcopenid.codepl
 ## Requirements
 * .NET Framework 4
 * Entity Framework 4.0
+* Entity Framework 4.0 CTP5 - See [MvcOpenID with Entity Framework 4 Code-First](http://mvcopenid.codeplex.com/wikipage?title=MvcOpenID%20with%20Entity%20Framework%204%20Code-First&referringTitle=Documentation) for more details.
 * ASP.NET MVC 3 (Release Candidate 2) - [Download here](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=955d593e-cbd1-4ed1-88eb-02ff79dd74d8&displaylang=en)
 * Code Contracts - [Download here](http://msdn.microsoft.com/en-us/devlabs/dd491992.aspx)
 * SQL Server 2008 R2 Express [https://www.microsoft.com/express/Database/Default.aspx](https://www.microsoft.com/express/Database/Default.aspx)
